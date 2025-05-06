@@ -13,6 +13,18 @@ namespace ChefLife.Models
         public decimal Money { get; set; }
         public int Reputation {  get; set; }
         public Dictionary<string, int> Inventory { get; set; }
-        
+        public List<Recipe> KnownRecipes { get; set; }
+
+        public Chef(string name)
+        {
+            Name = name;
+            CoolingLevel = 1;
+            Money = 10000.00m;
+            Reputation = 0;
+            Inventory = new Dictionary<string, int>();
+            KnownRecipes = new List<Recipe>();
+        }
+
+
     }
 }
