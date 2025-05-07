@@ -120,6 +120,17 @@ namespace ChefLife.Data
                 new Ingredient("Oregano", "Mediterranean herb", 1.25m),
                 new Ingredient("Black Pepper", "Spicy seasoning", 1.75m),
                 new Ingredient("Cinnamon", "Sweet spice", 2.00m),
+                new Ingredient("Parsley", "Fresh green garnish", 1.10m),
+                new Ingredient("Thyme", "Earthy green herb", 1.20m),
+                new Ingredient("Rosemary", "Fragrant needle-like herb", 1.35m),
+                new Ingredient("Paprika", "Red spice from peppers", 1.50m),
+                new Ingredient("Cumin", "Warm, earthy spice", 1.60m),
+                new Ingredient("Turmeric", "Bright yellow spice", 1.70m),
+                new Ingredient("Chili Flakes", "Spicy red pepper bits", 1.80m),
+                new Ingredient("Dill", "Feathery herb used in pickling", 1.25m),
+                new Ingredient("Mint", "Cool, fresh herb", 1.45m),
+                new Ingredient("Clove", "Intensely aromatic spice", 1.90m),
+                new Ingredient("Nutmeg", "Sweet and spicy seasoning", 2.10m),
 
                 // Special ingredients
                 new Ingredient("Truffle", "Rare, aromatic fungus", 25.00m, true),
