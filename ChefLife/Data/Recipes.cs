@@ -982,6 +982,9 @@ namespace ChefLife.Data
             starterRecipes.Add(allRecipes.Find(r => r.Name == "Egg Salad"));
             starterRecipes.Add(allRecipes.Find(r => r.Name == "Lemonade"));
             starterRecipes.Add(allRecipes.Find(r => r.Name == "Garlic Bread"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Bacon and Eggs Breakfast"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Avocado Toast"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Peanut Butter and Banana Sandwich")); 
 
             return starterRecipes;
         }
