@@ -410,5 +410,25 @@ namespace ChefLife.Data
             
             return recipes;
         }
+
+        public static List<Recipe> GetStarterRecipes()
+        {
+            List<Recipe> allRecipes = GetAllRecipes();
+            List<Recipe> starterRecipes = new List<Recipe>();
+
+            // Add only the most basic recipes for the starter set
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Scrambled Eggs"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Garden Salad"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Toast with Butter"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Boiled Eggs"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Fruit Salad"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Grilled Cheese Sandwich"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Vegetable Soup"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Egg Salad"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Lemonade"));
+            starterRecipes.Add(allRecipes.Find(r => r.Name == "Garlic Bread"));
+
+            return starterRecipes;
+        }
     }
 }

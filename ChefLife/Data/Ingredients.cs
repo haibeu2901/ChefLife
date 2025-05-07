@@ -147,7 +147,26 @@ namespace ChefLife.Data
                 new Ingredient("Vanilla Beans", "Whole aromatic vanilla pods", 20.00m, true),
                 new Ingredient("Morel Mushrooms", "Wild, meaty mushrooms", 32.00m, true),
                 new Ingredient("Sea Urchin (Uni)", "Delicacy from the sea", 37.00m, true),
-                new Ingredient("Fiddlehead Ferns", "Seasonal wild greens", 15.00m, true)
+                new Ingredient("Fiddlehead Ferns", "Seasonal wild greens", 15.00m, true),
+
+                // Additional ingredients
+                new Ingredient("Bacon", "Smoked and cured pork belly", 4.50m),
+                new Ingredient("Chocolate", "Sweet treat made from cocoa", 3.25m),
+                new Ingredient("Mushrooms", "Edible fungi with earthy flavor", 2.90m),
+                new Ingredient("Avocado", "Creamy green fruit", 2.15m),
+                new Ingredient("Coconut Milk", "Creamy liquid from coconuts", 2.75m),
+                new Ingredient("Lime", "Tangy citrus fruit", 0.85m),
+                new Ingredient("Peanut Butter", "Spread made from ground peanuts", 3.20m),
+                new Ingredient("Maple Syrup", "Sweet syrup from maple trees", 4.95m),
+                new Ingredient("Soy Sauce", "Salty fermented condiment", 2.35m),
+                new Ingredient("Red Wine", "Alcoholic grape beverage", 12.00m),
+                new Ingredient("Lobster", "Premium shellfish", 15.00m),
+                new Ingredient("Taco Shells", "Crispy corn shells for tacos", 2.50m),
+                new Ingredient("Ground Lamb", "Minced meat from lamb", 7.00m),
+                new Ingredient("Puff Pastry", "Flaky, layered dough", 3.60m),
+                new Ingredient("Breadcrumbs", "Dried, ground bread", 1.80m),
+                new Ingredient("Water", "Clear liquid essential for cooking", 0.10m),
+                new Ingredient("Olive Oil", "Premium cooking oil", 4.25m)
             };
 
             return ingredients;
