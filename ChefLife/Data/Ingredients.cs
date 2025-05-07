@@ -135,7 +135,19 @@ namespace ChefLife.Data
                 // Special ingredients
                 new Ingredient("Truffle", "Rare, aromatic fungus", 25.00m, true),
                 new Ingredient("Saffron", "Expensive, aromatic spice", 30.00m, true),
-                new Ingredient("Wagyu Beef", "Premium Japanese beef", 50.00m, true)
+                new Ingredient("Wagyu Beef", "Premium Japanese beef", 50.00m, true),
+                new Ingredient("Caviar", "Luxury fish eggs", 40.00m, true),
+                new Ingredient("Foie Gras", "Delicacy made from duck liver", 35.00m, true),
+                new Ingredient("Gold Leaf", "Edible gold flakes", 45.00m, true),
+                new Ingredient("Kobe Beef", "High-grade Japanese beef", 55.00m, true),
+                new Ingredient("Iberico Ham", "Cured Spanish ham", 42.00m, true),
+                new Ingredient("Matsutake Mushroom", "Rare Japanese mushroom", 38.00m, true),
+                new Ingredient("Black Garlic", "Fermented garlic with sweet flavor", 12.00m, true),
+                new Ingredient("Bluefin Tuna", "High-quality sashimi tuna", 48.00m, true),
+                new Ingredient("Vanilla Beans", "Whole aromatic vanilla pods", 20.00m, true),
+                new Ingredient("Morel Mushrooms", "Wild, meaty mushrooms", 32.00m, true),
+                new Ingredient("Sea Urchin (Uni)", "Delicacy from the sea", 37.00m, true),
+                new Ingredient("Fiddlehead Ferns", "Seasonal wild greens", 15.00m, true)
             };
 
             return ingredients;
