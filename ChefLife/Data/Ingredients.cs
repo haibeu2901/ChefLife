@@ -51,6 +51,18 @@ namespace ChefLife.Data
                 new Ingredient("Apple", "Sweet, crisp fruit", 1.25m),
                 new Ingredient("Lemon", "Sour citrus fruit", 0.90m),
                 new Ingredient("Berries", "Assorted small fruits", 3.50m),
+                new Ingredient("Banana", "Soft, sweet fruit", 1.00m),
+                new Ingredient("Orange", "Citrus fruit rich in vitamin C", 1.10m),
+                new Ingredient("Grapes", "Small sweet or sour fruit", 2.25m),
+                new Ingredient("Peach", "Juicy stone fruit", 1.50m),
+                new Ingredient("Plum", "Small stone fruit with tart flavor", 1.45m),
+                new Ingredient("Mango", "Tropical sweet fruit", 2.00m),
+                new Ingredient("Pineapple", "Tropical spiky fruit", 2.50m),
+                new Ingredient("Strawberry", "Sweet red fruit", 2.75m),
+                new Ingredient("Blueberry", "Tiny purple-blue fruit", 3.00m),
+                new Ingredient("Kiwi", "Fuzzy fruit with green inside", 1.35m),
+                new Ingredient("Pomegranate", "Juicy seeds inside", 2.80m),
+                new Ingredient("Melon", "Large, sweet fruit", 2.60m),
 
                 // Proteins
                 new Ingredient("Chicken", "Versatile poultry meat", 5.00m),
