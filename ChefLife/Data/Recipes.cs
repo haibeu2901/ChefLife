@@ -267,27 +267,144 @@ namespace ChefLife.Data
 
                 // Expert recipes (Difficulty 5)
                 new Recipe(
-                    "Truffle Pasta",
-                    "Luxurious pasta with truffle.",
-                    new Dictionary<string, int>{ {"Pasta", 2}, {"Cream", 2}, {"Truffle", 1}, {"Butter", 1}, {"Salt", 1} },
+                    "Truffle Butter Risotto",
+                    "A luxurious risotto made with rare truffles and rich butter.",
+                    new Dictionary<string, int>
+                    {
+                        {"Rice", 2},
+                        {"Truffle", 1},
+                        {"Butter", 2},
+                        {"Parmesan", 1},
+                        {"Black Pepper", 1}
+                    },
                     5,
-                    45.00m
+                    60.00m
                 ),
 
                 new Recipe(
-                    "Saffron Risotto",
-                    "Elegant risotto with saffron.",
-                    new Dictionary<string, int>{ {"Rice", 2}, {"Onion", 1}, {"Butter", 2}, {"Saffron", 1}, {"Cheese", 1}, {"Salt", 1} },
-                    5,
-                    40.00m
-                ),
-
-                new Recipe(
-                    "Wagyu Steak",
-                    "Premium Japanese beef cooked to perfection.",
-                    new Dictionary<string, int>{ {"Wagyu Beef", 2}, {"Salt", 1}, {"Black Pepper", 1}, {"Butter", 1} },
+                    "Foie Gras on Toast",
+                    "A rich foie gras delicacy served on a crispy slice of bread, garnished with rosemary.",
+                    new Dictionary<string, int>
+                    {
+                        {"Foie Gras", 1},
+                        {"Bread", 1},
+                        {"Butter", 1},
+                        {"Rosemary", 1}
+                    },
                     5,
                     80.00m
+                ),
+
+                new Recipe(
+                    "Caviar on Crackers",
+                    "An exquisite serving of luxurious caviar on crispy crackers, garnished with parsley.",
+                    new Dictionary<string, int>
+                    {
+                        {"Caviar", 1},
+                        {"Bread", 1},
+                        {"Parsley", 1}
+                    },
+                    5,
+                    100.00m
+                ),
+
+                new Recipe(
+                    "Wagyu Beef Steak",
+                    "A premium Wagyu beef steak cooked to perfection, seasoned with rosemary and black pepper.",
+                    new Dictionary<string, int>
+                    {
+                        {"Wagyu Beef", 2},
+                        {"Rosemary", 1},
+                        {"Black Pepper", 1},
+                        {"Butter", 1}
+                    },
+                    5,
+                    120.00m
+                ),
+
+                new Recipe(
+                    "Kobe Beef Tartare",
+                    "Finely chopped Kobe beef mixed with fresh lemon, parsley, and a touch of black pepper.",
+                    new Dictionary<string, int>
+                    {
+                        {"Kobe Beef", 2},
+                        {"Lemon", 1},
+                        {"Parsley", 1},
+                        {"Black Pepper", 1}
+                    },
+                    5,
+                    150.00m
+                ),
+
+                new Recipe(
+                    "Iberico Ham and Melon",
+                    "A refreshing pairing of sweet melon and savory Iberico ham.",
+                    new Dictionary<string, int>
+                    {
+                        {"Iberico Ham", 1},
+                        {"Melon", 1},
+                        {"Mint", 1}
+                    },
+                    5,
+                    75.00m
+                ),
+
+                new Recipe(
+                    "Morel Mushroom Risotto",
+                    "An earthy and creamy risotto made with wild morel mushrooms.",
+                    new Dictionary<string, int>
+                    {
+                        {"Rice", 2},
+                        {"Morel Mushrooms", 1},
+                        {"Butter", 2},
+                        {"Parmesan", 2},
+                        {"Garlic", 1}
+                    },
+                    5,
+                    65.00m
+                ),
+
+                new Recipe(
+                    "Matsutake Mushroom Soup",
+                    "A delicate Japanese-inspired soup featuring the rare Matsutake mushrooms.",
+                    new Dictionary<string, int>
+                    {
+                        {"Matsutake Mushroom", 1},
+                        {"Chicken", 2},
+                        {"Garlic", 1},
+                        {"Rosemary", 1}
+                    },
+                    5,
+                    70.00m
+                ),
+
+                new Recipe(
+                    "Black Garlic Chicken",
+                    "Tender chicken cooked with sweet and savory black garlic, served with steamed vegetables.",
+                    new Dictionary<string, int>
+                    {
+                        {"Chicken", 2},
+                        {"Black Garlic", 1},
+                        {"Rosemary", 1},
+                        {"Olive Oil", 1},
+                        {"Salt", 1}
+                    },
+                    5,
+                    50.00m
+                ),
+
+                new Recipe(
+                    "Sea Urchin (Uni) Sushi",
+                    "Delicate sea urchin (uni) served on a bed of sushi rice, garnished with lemon.",
+                    new Dictionary<string, int>
+                    {
+                        {"Sea Urchin (Uni)", 1},
+                        {"Rice", 1},
+                        {"Lemon", 1},
+                        {"Black Pepper", 1}
+                    },
+                    5,
+                    95.00m
                 )
             };
             
