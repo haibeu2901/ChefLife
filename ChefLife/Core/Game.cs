@@ -58,5 +58,31 @@ namespace ChefLife.Core
             ui.DisplayMessage($"Welcome, Chef {name}! Your culinary adventure begins now!");
             ui.PressAnyKeyToContinue();
         }
+
+        // Run the day's activities
+        private void RunDay()
+        {
+            bool dayEnded = false;
+
+            while (!dayEnded)
+            {
+                // Display main menu
+                ui.DisplayTitle("\"What would you like to do?\"");
+                List<string> options = new List<string>
+                {
+                    "Go to Market",
+                    "View Recipes",
+                    "View Inventory",
+                    "Cook Something",
+                    "Serve Customers",
+                    "End Day"
+                };
+                int choice = ui.DisplayMenu(options);
+                switch (choice)
+                {
+                    
+                }
+            }
+        }
     }
 }
