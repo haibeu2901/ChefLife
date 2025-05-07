@@ -20,6 +20,30 @@ namespace ChefLife.Core
             Console.WriteLine();
         }
 
+        // Method to get user input
+        public string GetUserInput(string prompt)
+        {
+            Console.WriteLine($"{prompt}");
+            return Console.ReadLine().Trim();
+        }
+
+        // Method to get integer input within a range
+        public int GetIntegerInput(string prompt, int min, int max)
+        {
+            while(true)
+            {
+                Console.Write($"{prompt}");
+                if (int.TryParse(Console.ReadLine(), out int result))
+                {
+                    if (result >= min && result <=max)
+                    {
+                        return result;
+                    }
+                }
+                Console.WriteLine($"Please enter a number between {min} and {max}.");
+            }
+        }
+
         // Method to display a message
         public void DisplayMessage(string message)
         {
@@ -35,7 +59,8 @@ namespace ChefLife.Core
             }
 
             Console.WriteLine() ;
-            int choice = get
+            int choice = GetIntegerInput("Enter your choice: ", 1, options.Count);
+            return choice - 1; // Return 0-based index
         }
     }
 }
