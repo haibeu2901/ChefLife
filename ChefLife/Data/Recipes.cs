@@ -95,14 +95,6 @@ namespace ChefLife.Data
                     4.50m
                 ),
 
-                new Recipe(
-                    "Mashed Potatoes",
-                    "Creamy mashed potatoes.",
-                    new Dictionary<string, int>{ {"Potato", 3}, {"Butter", 2}, {"Milk", 1}, {"Salt", 1} },
-                    1,
-                    6.00m
-                ),
-
                 // Medium recipes (Difficulty 2-3)
                 new Recipe(
                     "Tomato Pasta",
@@ -134,6 +126,62 @@ namespace ChefLife.Data
                     new Dictionary<string, int>{ {"Bell Pepper", 2}, {"Carrot", 2}, {"Onion", 1}, {"Garlic", 1}, {"Salt", 1} },
                     2,
                     10.00m
+                ),
+
+                new Recipe(
+                    "Chicken Fried Rice",
+                    "Stir-fried rice with chicken and vegetables.",
+                    new Dictionary<string, int>{ {"Rice", 2}, {"Chicken", 1}, {"Carrot", 1}, {"Onion", 1}, {"Eggs", 1}, {"Salt", 1} },
+                    2,
+                    13.00m
+                ),
+
+                new Recipe(
+                    "Vegetable Curry",
+                    "Spicy curry with mixed vegetables.",
+                    new Dictionary<string, int>{ {"Potato", 1}, {"Carrot", 1}, {"Onion", 1}, {"Tomato", 2}, {"Garlic", 1}, {"Salt", 1} },
+                    2,
+                    11.50m
+                ),
+
+                new Recipe(
+                    "Beef Stir-Fry",
+                    "Quick stir-fried beef with vegetables.",
+                    new Dictionary<string, int>{ {"Beef", 2}, {"Bell Pepper", 1}, {"Onion", 1}, {"Garlic", 1}, {"Soy Sauce", 1} },
+                    3,
+                    14.00m
+                ),
+
+                new Recipe(
+                    "Spaghetti Carbonara",
+                    "Pasta with a creamy egg-based sauce.",
+                    new Dictionary<string, int>{ {"Pasta", 2}, {"Eggs", 2}, {"Cheese", 2}, {"Garlic", 1}, {"Salt", 1}, {"Black Pepper", 1} },
+                    3,
+                    15.00m
+                ),
+
+                new Recipe(
+                    "Chicken Tacos",
+                    "Soft tacos filled with grilled chicken and toppings.",
+                    new Dictionary<string, int>{ {"Chicken", 2}, {"Taco Shells", 4}, {"Lettuce", 1}, {"Tomato", 1}, {"Cheese", 2}, {"Black Pepper", 1} },
+                    2,
+                    12.00m
+                ),
+
+                new Recipe(
+                    "Beef Bolognese",
+                    "Classic Italian pasta dish with rich beef sauce.",
+                    new Dictionary<string, int>{ {"Beef", 2}, {"Pasta", 2}, {"Onion", 1}, {"Tomato", 2}, {"Garlic", 1}, {"Salt", 1} },
+                    3,
+                    18.00m
+                ),
+
+                new Recipe(
+                    "Eggplant Parmesan",
+                    "Fried eggplant topped with marinara and cheese.",
+                    new Dictionary<string, int>{ {"Eggplant", 2}, {"Tomato", 2}, {"Cheese", 2}, {"Breadcrumbs", 1}, {"Garlic", 1} },
+                    2,
+                    16.00m
                 ),
 
                 // Advanced recipes (Difficulty 4-5)
