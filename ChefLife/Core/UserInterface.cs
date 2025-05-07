@@ -62,5 +62,22 @@ namespace ChefLife.Core
             int choice = GetIntegerInput("Enter your choice: ", 1, options.Count);
             return choice - 1; // Return 0-based index
         }
+
+        // Method to confirm an action
+        public bool ConfirmAction(string prompt)
+        {
+            Console.Write($"{prompt} (Y/N): ");
+            string input = Console.ReadLine().Trim().ToUpper();
+            return input == "Y" || input == "YES";
+        }
+
+        // Method to pause until the user presses a key
+        public void PressAnyKeyToContinue()
+        {
+            Console.WriteLine();
+            Console.Write("Press any key to continue...");
+            Console.ReadKey(true);
+            Console.WriteLine();
+        }
     }
 }
