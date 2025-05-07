@@ -38,6 +38,14 @@ namespace ChefLife.Data
                 new Ingredient("Carrot", "Sweet root vegetable", 0.80m),
                 new Ingredient("Potato", "Starchy tuber vegetable", 0.90m),
                 new Ingredient("Bell Pepper", "Sweet, crunchy vegetable", 1.75m),
+                new Ingredient("Cucumber", "Cool, crunchy vegetable", 1.10m),
+                new Ingredient("Spinach", "Leafy green high in iron", 1.40m),
+                new Ingredient("Zucchini", "Soft green squash", 1.30m),
+                new Ingredient("Celery", "Crunchy vegetable for soups and salads", 1.20m),
+                new Ingredient("Broccoli", "Green cruciferous vegetable", 1.65m),
+                new Ingredient("Cauliflower", "White cruciferous vegetable", 1.70m),
+                new Ingredient("Green Beans", "Tender pods used in many dishes", 1.50m),
+                new Ingredient("Eggplant", "Purple vegetable with soft texture", 1.80m),
 
                 // Fruits
                 new Ingredient("Apple", "Sweet, crisp fruit", 1.25m),
