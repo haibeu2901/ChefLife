@@ -102,6 +102,18 @@ namespace ChefLife.Data
                 new Ingredient("Rice", "Versatile grain", 2.00m),
                 new Ingredient("Pasta", "Wheat-based noodles", 2.25m),
                 new Ingredient("Bread", "Baked dough staple", 2.75m),
+                new Ingredient("Quinoa", "Protein-rich grain", 3.00m),
+                new Ingredient("Oats", "Used in breakfast and baking", 1.90m),
+                new Ingredient("Barley", "Grain used in soups and stews", 2.10m),
+                new Ingredient("Cornmeal", "Ground dried corn", 1.85m),
+                new Ingredient("Couscous", "Small steamed balls of wheat", 2.35m),
+                new Ingredient("Rye Bread", "Bread made from rye flour", 2.95m),
+                new Ingredient("Whole Wheat Pasta", "Healthier pasta option", 2.60m),
+                new Ingredient("Tortilla", "Thin flatbread", 2.20m),
+                new Ingredient("Bagel", "Round, chewy bread", 2.80m),
+                new Ingredient("Soba Noodles", "Buckwheat Japanese noodles", 3.10m),
+                new Ingredient("Rice Noodles", "Asian-style noodles", 2.40m),
+                new Ingredient("Bulgur", "Cracked wheat grain", 2.00m),
 
                 // Herbs & Spices
                 new Ingredient("Basil", "Aromatic herb", 1.50m),
