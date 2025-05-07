@@ -114,7 +114,7 @@ namespace ChefLife.Core
                     int quantity = ui.GetIntegerInput($"How many {selectedIngredients.Name} would you like to buy?", 0, 100);
                     if (quantity > 0)
                     {
-
+                        player.BuyIngredient(selectedIngredients.Name, quantity, selectedIngredients.Price);
                     }
                 }
             }
