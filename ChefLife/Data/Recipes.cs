@@ -209,6 +209,62 @@ namespace ChefLife.Data
                     20.00m
                 ),
 
+                new Recipe(
+                    "Duck à l'Orange",
+                    "Roast duck served with a tangy orange sauce.",
+                    new Dictionary<string, int>{ {"Duck", 1}, {"Orange", 2}, {"Garlic", 1}, {"Sugar", 1}, {"Salt", 1}, {"Black Pepper", 1} },
+                    4,
+                    35.00m
+                ),
+
+                new Recipe(
+                    "Lobster Bisque",
+                    "Rich and creamy seafood soup.",
+                    new Dictionary<string, int>{ {"Lobster", 2}, {"Cream", 2}, {"Garlic", 1}, {"Tomato", 1}, {"Onion", 1}, {"Salt", 1} },
+                    4,
+                    30.00m
+                ),
+
+                new Recipe(
+                    "Beef Wellington",
+                    "Tender beef wrapped in puff pastry with mushroom duxelles.",
+                    new Dictionary<string, int>{ {"Beef", 3}, {"Mushrooms", 2}, {"Butter", 2}, {"Puff Pastry", 1}, {"Salt", 1}, {"Black Pepper", 1} },
+                    4,
+                    50.00m
+                ),
+
+                new Recipe(
+                    "Paella",
+                    "Spanish rice dish with seafood and sausage.",
+                    new Dictionary<string, int>{ {"Rice", 2}, {"Chicken", 1}, {"Fish", 1}, {"Tomato", 2}, {"Garlic", 1}, {"Saffron", 1} },
+                    4,
+                    40.00m
+                ),
+
+                new Recipe(
+                    "Moussaka",
+                    "Layered Greek casserole with eggplant and lamb.",
+                    new Dictionary<string, int>{ {"Eggplant", 3}, {"Ground Lamb", 2}, {"Tomato", 2}, {"Garlic", 1}, {"Cheese", 2}, {"Salt", 1} },
+                    4,
+                    28.00m
+                ),
+
+                new Recipe(
+                    "Coq au Vin",
+                    "French chicken braised in red wine.",
+                    new Dictionary<string, int>{ {"Chicken", 2}, {"Red Wine", 2}, {"Onion", 1}, {"Carrot", 1}, {"Garlic", 1}, {"Bacon", 1} },
+                    4,
+                    32.00m
+                ),
+
+                new Recipe(
+                    "Ratatouille",
+                    "A medley of roasted vegetables in a tomato sauce.",
+                    new Dictionary<string, int>{ {"Zucchini", 2}, {"Eggplant", 2}, {"Tomato", 2}, {"Onion", 1}, {"Garlic", 1}, {"Olive Oil", 1} },
+                    4,
+                    18.00m
+                ),
+
                 // Expert recipes (Difficulty 5)
                 new Recipe(
                     "Truffle Pasta",
