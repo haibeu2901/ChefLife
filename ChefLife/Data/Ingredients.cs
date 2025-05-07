@@ -85,6 +85,18 @@ namespace ChefLife.Data
                 new Ingredient("Milk", "Dairy liquid", 2.25m),
                 new Ingredient("Cheese", "Fermented dairy product", 4.50m),
                 new Ingredient("Cream", "High-fat dairy product", 3.75m),
+                new Ingredient("Yogurt", "Fermented milk product", 2.50m),
+                new Ingredient("Butter", "Used in cooking and baking", 3.50m),
+                new Ingredient("Sour Cream", "Tangy dairy topping", 2.60m),
+                new Ingredient("Cottage Cheese", "Lumpy dairy cheese", 2.80m),
+                new Ingredient("Whipped Cream", "Light and fluffy topping", 2.90m),
+                new Ingredient("Goat Cheese", "Cheese from goat milk", 4.25m),
+                new Ingredient("Mozzarella", "Soft Italian cheese", 3.75m),
+                new Ingredient("Parmesan", "Hard aged cheese", 5.00m),
+                new Ingredient("Blue Cheese", "Sharp, veined cheese", 4.75m),
+                new Ingredient("Ricotta", "Soft cheese used in baking", 3.25m),
+                new Ingredient("Milk Powder", "Dehydrated milk", 2.40m),
+                new Ingredient("Ghee", "Clarified butter", 3.95m),
 
                 // Grains & Pasta
                 new Ingredient("Rice", "Versatile grain", 2.00m),
