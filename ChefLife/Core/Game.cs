@@ -119,5 +119,23 @@ namespace ChefLife.Core
                 }
             }
         }
+
+        // View recipes functionality
+        private void ViewRecipes()
+        {
+            ui.DisplayTitle("Your Recipe Book");
+
+            if (player.KnownRecipes.Count == 0)
+            {
+                ui.DisplayMessage("You don't know any recipes yet!");
+            } else
+            {
+                foreach (Recipe recipe in player.KnownRecipes)
+                {
+                    recipe.DisplayRecipe();
+                    ui.PressAnyKeyToContinue();
+                }
+            }
+        }
     }
 }
