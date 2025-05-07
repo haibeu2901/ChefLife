@@ -25,6 +25,16 @@ namespace ChefLife.Models
             KnownRecipes = new List<Recipe>();
         }
 
-
+        public void LearnRecipe(Recipe recipe)
+        {
+            if (!KnownRecipes.Contains(recipe))
+            {
+                KnownRecipes.Add(recipe);
+                Console.WriteLine($"Learned new recipe: {recipe.Name}!");
+            } else
+            {
+                Console.WriteLine($"You already know the recipe for {recipe.Name}.");
+            }
+        }
     }
 }

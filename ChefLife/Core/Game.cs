@@ -49,7 +49,11 @@ namespace ChefLife.Core
             player = new Chef(name);
 
             // Give the player some starter recipes
-            
+            List<Recipe> starterRecipes = Recipes.GetStarterRecipes();
+            foreach (var recipe in starterRecipes)
+            {
+                
+            }
         }
     }
 }
