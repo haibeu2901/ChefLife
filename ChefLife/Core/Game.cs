@@ -84,5 +84,40 @@ namespace ChefLife.Core
                 }
             }
         }
+
+        private void GoToMarket()
+        {
+            bool exitMarket = false;
+
+            while (!exitMarket)
+            {
+                ui.DisplayTitle("Market");
+                ui.DisplayMessage($"Your money: ${player.Money}");
+
+                // Display available ingredients to buy
+                List<string> marketOptions = new List<string>();
+                foreach (Ingredient ingredient in availableIngredients)
+                {
+                    marketOptions.Add($"{ingredient.Name} - ${ingredient.Price} each");
+                }
+                marketOptions.Add("Exit Market");
+
+                int choice = ui.DisplayMenu(marketOptions);
+
+                if (choice == marketOptions.Count - 1)
+                {
+                    exitMarket = true;
+                } else
+                {
+                    // Buy the selected ingredient
+                    Ingredient selectedIngredients = availableIngredients[choice];
+                    int quantity = ui.GetIntegerInput($"How many {selectedIngredients.Name} would you like to buy?", 0, 100);
+                    if (quantity > 0)
+                    {
+
+                    }
+                }
+            }
+        }
     }
 }
