@@ -36,5 +36,29 @@ namespace ChefLife.Models
                 Console.WriteLine($"You already know the recipe for {recipe.Name}.");
             }
         }
+
+        public bool BuyIngredient(string name, int quantity, decimal price)
+        {
+            decimal totalCost = price * quantity;
+
+            if (Money < totalCost)
+            {
+                Console.WriteLine("Not enough money to buy this ingredient!");
+                return false;
+            }
+
+            Money -= totalCost;
+
+            if (Inventory.ContainsKey(name))
+            {
+                Inventory[name] += quantity;
+            } else
+            {
+                Inventory.Add(name, quantity);
+            }
+
+            Console.WriteLine($"Purchased {quantity} {name} for ${totalCost}");
+            return true;
+        }
     }
 }
