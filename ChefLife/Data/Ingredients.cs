@@ -19,6 +19,16 @@ namespace ChefLife.Data
                 new Ingredient("Salt", "Enhances flavor in most dishes", 1.00m),
                 new Ingredient("Butter", "Rich fat used in cooking and baking", 3.50m),
                 new Ingredient("Eggs", "Versatile ingredient for many dishes", 2.00m),
+                new Ingredient("Baking Powder", "Leavening agent for baking", 1.25m),
+                new Ingredient("Baking Soda", "Used in baking and cleaning", 1.10m),
+                new Ingredient("Vinegar", "Acidic liquid for seasoning or pickling", 1.50m),
+                new Ingredient("Yeast", "Used for fermenting and baking", 2.25m),
+                new Ingredient("Oil", "Used in frying and cooking", 3.00m),
+                new Ingredient("Cornstarch", "Thickening agent", 1.40m),
+                new Ingredient("Honey", "Natural sweetener from bees", 3.75m),
+                new Ingredient("Vanilla Extract", "Flavoring for desserts", 2.95m),
+                new Ingredient("Lard", "Fat from pork used in baking", 2.25m),
+                new Ingredient("Gelatin", "Used in jellies and desserts", 2.80m),
 
                 // Vegetables
                 new Ingredient("Tomato", "Red, juicy fruit used as vegetable", 1.25m),
