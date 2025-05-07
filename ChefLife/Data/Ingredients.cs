@@ -70,6 +70,16 @@ namespace ChefLife.Data
                 new Ingredient("Pork", "Meat from pigs", 6.00m),
                 new Ingredient("Fish", "Fresh seafood", 8.00m),
                 new Ingredient("Tofu", "Soy-based protein", 3.00m),
+                new Ingredient("Shrimp", "Small shellfish, quick to cook", 9.00m),
+                new Ingredient("Turkey", "Lean white poultry", 5.75m),
+                new Ingredient("Lamb", "Tender red meat", 8.50m),
+                new Ingredient("Duck", "Rich and fatty bird meat", 7.25m),
+                new Ingredient("Crab", "Shellfish with sweet meat", 10.00m),
+                new Ingredient("Salmon", "Popular fatty fish", 9.50m),
+                new Ingredient("Tuna", "Lean and flavorful fish", 8.25m),
+                new Ingredient("Tempeh", "Fermented soy product", 3.50m),
+                new Ingredient("Eggs", "Protein-rich, versatile", 2.00m),
+                new Ingredient("Sausage", "Ground meat in casing", 4.75m),
 
                 // Dairy
                 new Ingredient("Milk", "Dairy liquid", 2.25m),
