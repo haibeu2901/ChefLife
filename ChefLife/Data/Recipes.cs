@@ -39,6 +39,70 @@ namespace ChefLife.Data
                     3.50m
                 ),
 
+                new Recipe(
+                    "Boiled Eggs",
+                    "Classic hard-boiled eggs.",
+                    new Dictionary<string, int>{ {"Eggs", 2}, {"Salt", 1} },
+                    1,
+                    4.00m
+                ),
+
+                new Recipe(
+                    "Fruit Salad",
+                    "A mix of fresh fruits.",
+                    new Dictionary<string, int>{ {"Apple", 1}, {"Berries", 1}, {"Lemon", 1} },
+                    1,
+                    6.00m
+                ),
+
+                new Recipe(
+                    "Grilled Cheese Sandwich",
+                    "Toasted bread with melted cheese.",
+                    new Dictionary<string, int>{ {"Bread", 2}, {"Cheese", 2}, {"Butter", 1} },
+                    1,
+                    5.50m
+                ),
+
+                new Recipe(
+                    "Vegetable Soup",
+                    "Light soup with assorted vegetables.",
+                    new Dictionary<string, int>{ {"Carrot", 1}, {"Potato", 1}, {"Onion", 1}, {"Salt", 1} },
+                    1,
+                    6.50m
+                ),
+
+                new Recipe(
+                    "Egg Salad",
+                    "Chopped eggs mixed with seasoning.",
+                    new Dictionary<string, int>{ {"Eggs", 2}, {"Salt", 1}, {"Black Pepper", 1} },
+                    1,
+                    5.75m
+                ),
+
+                new Recipe(
+                    "Lemonade",
+                    "Refreshing lemon drink.",
+                    new Dictionary<string, int>{ {"Lemon", 2}, {"Sugar", 2}, {"Water", 1} },
+                    1,
+                    3.00m
+                ),
+
+                new Recipe(
+                    "Garlic Bread",
+                    "Bread infused with garlic and butter.",
+                    new Dictionary<string, int>{ {"Bread", 1}, {"Garlic", 1}, {"Butter", 1} },
+                    1,
+                    4.50m
+                ),
+
+                new Recipe(
+                    "Mashed Potatoes",
+                    "Creamy mashed potatoes.",
+                    new Dictionary<string, int>{ {"Potato", 3}, {"Butter", 2}, {"Milk", 1}, {"Salt", 1} },
+                    1,
+                    6.00m
+                ),
+
                 // Medium recipes (Difficulty 2-3)
                 new Recipe(
                     "Tomato Pasta",
