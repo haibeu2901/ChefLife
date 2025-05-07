@@ -766,7 +766,7 @@ namespace ChefLife.Data
                     5,
                     60.00m
                 ),
-
+                
                 new Recipe(
                     "Foie Gras on Toast",
                     "A rich foie gras delicacy served on a crispy slice of bread, garnished with rosemary.",
@@ -780,7 +780,7 @@ namespace ChefLife.Data
                     5,
                     80.00m
                 ),
-
+                
                 new Recipe(
                     "Caviar on Crackers",
                     "An exquisite serving of luxurious caviar on crispy crackers, garnished with parsley.",
@@ -793,7 +793,7 @@ namespace ChefLife.Data
                     5,
                     100.00m
                 ),
-
+                
                 new Recipe(
                     "Wagyu Beef Steak",
                     "A premium Wagyu beef steak cooked to perfection, seasoned with rosemary and black pepper.",
@@ -807,7 +807,7 @@ namespace ChefLife.Data
                     5,
                     120.00m
                 ),
-
+                
                 new Recipe(
                     "Kobe Beef Tartare",
                     "Finely chopped Kobe beef mixed with fresh lemon, parsley, and a touch of black pepper.",
@@ -821,7 +821,7 @@ namespace ChefLife.Data
                     5,
                     150.00m
                 ),
-
+                
                 new Recipe(
                     "Iberico Ham and Melon",
                     "A refreshing pairing of sweet melon and savory Iberico ham.",
@@ -834,7 +834,7 @@ namespace ChefLife.Data
                     5,
                     75.00m
                 ),
-
+                
                 new Recipe(
                     "Morel Mushroom Risotto",
                     "An earthy and creamy risotto made with wild morel mushrooms.",
@@ -849,7 +849,7 @@ namespace ChefLife.Data
                     5,
                     65.00m
                 ),
-
+                
                 new Recipe(
                     "Matsutake Mushroom Soup",
                     "A delicate Japanese-inspired soup featuring the rare Matsutake mushrooms.",
@@ -863,7 +863,7 @@ namespace ChefLife.Data
                     5,
                     70.00m
                 ),
-
+                
                 new Recipe(
                     "Black Garlic Chicken",
                     "Tender chicken cooked with sweet and savory black garlic, served with steamed vegetables.",
@@ -878,7 +878,7 @@ namespace ChefLife.Data
                     5,
                     50.00m
                 ),
-
+                
                 new Recipe(
                     "Sea Urchin (Uni) Sushi",
                     "Delicate sea urchin (uni) served on a bed of sushi rice, garnished with lemon.",
@@ -891,6 +891,75 @@ namespace ChefLife.Data
                     },
                     5,
                     95.00m
+                ),
+                
+                new Recipe(
+                    "Beef Wellington with Truffle",
+                    "Tender beef fillet with mushrooms and truffle, wrapped in puff pastry.",
+                    new Dictionary<string, int>
+                    {
+                        {"Beef", 2},
+                        {"Truffle", 1},
+                        {"Mushrooms", 2},
+                        {"Puff Pastry", 1},
+                        {"Butter", 1},
+                        {"Salt", 1},
+                        {"Black Pepper", 1}
+                    },
+                    5,
+                    65.00m
+                ),
+                
+                new Recipe(
+                    "Lobster Thermidor",
+                    "Luxurious lobster dish with a rich, creamy sauce.",
+                    new Dictionary<string, int>
+                    {
+                        {"Lobster", 2},
+                        {"Butter", 2},
+                        {"Cream", 1},
+                        {"Cheese", 1},
+                        {"Garlic", 1},
+                        {"Black Pepper", 1},
+                        {"Salt", 1},
+                        {"Parsley", 1}
+                    },
+                    5,
+                    45.00m
+                ),
+                
+                new Recipe(
+                    "Gold Leaf Chocolate Truffles",
+                    "Exquisite chocolate confections with edible gold.",
+                    new Dictionary<string, int>
+                    {
+                        {"Chocolate", 2},
+                        {"Cream", 1},
+                        {"Butter", 1},
+                        {"Gold Leaf", 1},
+                        {"Vanilla Extract", 1}
+                    },
+                    5,
+                    55.00m
+                ),
+                
+                new Recipe(
+                    "Saffron Risotto with Seafood",
+                    "Golden Italian rice dish with premium seafood.",
+                    new Dictionary<string, int>
+                    {
+                        {"Rice", 2},
+                        {"Saffron", 1},
+                        {"Shrimp", 2},
+                        {"Fish", 1},
+                        {"Butter", 1},
+                        {"Onion", 1},
+                        {"Garlic", 1},
+                        {"Parmesan", 1},
+                        {"Salt", 1}
+                    },
+                    5,
+                    38.00m
                 )
             };
             
