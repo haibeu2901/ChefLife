@@ -529,85 +529,226 @@ namespace ChefLife.Data
                     22.00m
                 ),
 
-                // Advanced recipes (Difficulty 4-5)
+                // Advanced recipes (Difficulty 4)
                 new Recipe(
                     "Beef Bourguignon",
                     "A classic French beef stew.",
-                    new Dictionary<string, int>{ {"Beef", 3}, {"Onion", 2}, {"Carrot", 2}, {"Garlic", 2}, {"Tomato", 1}, {"Black Pepper", 1}, {"Salt", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Beef", 3},
+                        {"Onion", 2},
+                        {"Carrot", 2},
+                        {"Garlic", 2},
+                        {"Tomato", 1},
+                        {"Black Pepper", 1},
+                        {"Salt", 1},
+                        {"Red Wine", 2},
+                        {"Bacon", 1},
+                        {"Mushrooms", 1}
+                    },
                     4,
                     25.00m
                 ),
-
+                
                 new Recipe(
                     "Apple Pie",
                     "Sweet apple filling in a flaky crust.",
-                    new Dictionary<string, int>{ {"Flour", 3}, {"Butter", 3}, {"Sugar", 2}, {"Apple", 4}, {"Cinnamon", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Flour", 3},
+                        {"Butter", 3},
+                        {"Sugar", 2},
+                        {"Apple", 4},
+                        {"Cinnamon", 1}
+                    },
                     4,
                     18.00m
                 ),
-
+                
                 new Recipe(
                     "Risotto",
                     "Creamy Italian rice dish.",
-                    new Dictionary<string, int>{ {"Rice", 2}, {"Onion", 1}, {"Butter", 2}, {"Cheese", 2}, {"Salt", 1}, {"Black Pepper", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Rice", 2},
+                        {"Onion", 1},
+                        {"Butter", 2},
+                        {"Cheese", 2},
+                        {"Salt", 1},
+                        {"Black Pepper", 1}
+                    },
                     4,
                     20.00m
                 ),
-
+                
                 new Recipe(
                     "Duck à l'Orange",
                     "Roast duck served with a tangy orange sauce.",
-                    new Dictionary<string, int>{ {"Duck", 1}, {"Orange", 2}, {"Garlic", 1}, {"Sugar", 1}, {"Salt", 1}, {"Black Pepper", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Duck", 1},
+                        {"Orange", 2},
+                        {"Garlic", 1},
+                        {"Sugar", 1},
+                        {"Salt", 1},
+                        {"Black Pepper", 1}
+                    },
                     4,
                     35.00m
                 ),
-
+                
                 new Recipe(
                     "Lobster Bisque",
                     "Rich and creamy seafood soup.",
-                    new Dictionary<string, int>{ {"Lobster", 2}, {"Cream", 2}, {"Garlic", 1}, {"Tomato", 1}, {"Onion", 1}, {"Salt", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Lobster", 2},
+                        {"Cream", 2},
+                        {"Garlic", 1},
+                        {"Tomato", 1},
+                        {"Onion", 1},
+                        {"Salt", 1}
+                    },
                     4,
                     30.00m
                 ),
-
-                new Recipe(
-                    "Beef Wellington",
-                    "Tender beef wrapped in puff pastry with mushroom duxelles.",
-                    new Dictionary<string, int>{ {"Beef", 3}, {"Mushrooms", 2}, {"Butter", 2}, {"Puff Pastry", 1}, {"Salt", 1}, {"Black Pepper", 1} },
-                    4,
-                    50.00m
-                ),
-
+                
                 new Recipe(
                     "Paella",
                     "Spanish rice dish with seafood and sausage.",
-                    new Dictionary<string, int>{ {"Rice", 2}, {"Chicken", 1}, {"Fish", 1}, {"Tomato", 2}, {"Garlic", 1}, {"Saffron", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Rice", 2},
+                        {"Chicken", 1},
+                        {"Fish", 1},
+                        {"Tomato", 2},
+                        {"Garlic", 1},
+                        {"Saffron", 1},
+                        {"Shrimp", 2},
+                        {"Bell Pepper", 1},
+                        {"Olive Oil", 1}
+                    },
                     4,
                     40.00m
                 ),
-
+                
                 new Recipe(
                     "Moussaka",
                     "Layered Greek casserole with eggplant and lamb.",
-                    new Dictionary<string, int>{ {"Eggplant", 3}, {"Ground Lamb", 2}, {"Tomato", 2}, {"Garlic", 1}, {"Cheese", 2}, {"Salt", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Eggplant", 3},
+                        {"Ground Lamb", 2},
+                        {"Tomato", 2},
+                        {"Garlic", 1},
+                        {"Cheese", 2},
+                        {"Salt", 1},
+                        {"Onion", 1},
+                        {"Olive Oil", 1}
+                    },
                     4,
                     28.00m
                 ),
-
+                
                 new Recipe(
                     "Coq au Vin",
                     "French chicken braised in red wine.",
-                    new Dictionary<string, int>{ {"Chicken", 2}, {"Red Wine", 2}, {"Onion", 1}, {"Carrot", 1}, {"Garlic", 1}, {"Bacon", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Chicken", 2},
+                        {"Red Wine", 2},
+                        {"Onion", 1},
+                        {"Carrot", 1},
+                        {"Garlic", 1},
+                        {"Bacon", 1},
+                        {"Mushrooms", 1}
+                    },
                     4,
                     32.00m
                 ),
-
+                
                 new Recipe(
                     "Ratatouille",
                     "A medley of roasted vegetables in a tomato sauce.",
-                    new Dictionary<string, int>{ {"Zucchini", 2}, {"Eggplant", 2}, {"Tomato", 2}, {"Onion", 1}, {"Garlic", 1}, {"Olive Oil", 1} },
+                    new Dictionary<string, int>
+                    {
+                        {"Zucchini", 2},
+                        {"Eggplant", 2},
+                        {"Tomato", 2},
+                        {"Onion", 1},
+                        {"Garlic", 1},
+                        {"Olive Oil", 1},
+                        {"Bell Pepper", 1},
+                        {"Basil", 1}
+                    },
                     4,
                     18.00m
+                ),
+                
+                new Recipe(
+                    "Beef Wellington",
+                    "Tender beef wrapped in puff pastry with mushroom duxelles.",
+                    new Dictionary<string, int>
+                    {
+                        {"Beef", 3},
+                        {"Mushrooms", 2},
+                        {"Butter", 2},
+                        {"Puff Pastry", 1},
+                        {"Salt", 1},
+                        {"Black Pepper", 1}
+                    },
+                    4,
+                    50.00m
+                ),
+                
+                new Recipe(
+                    "Chocolate Truffle Cake",
+                    "Decadent chocolate dessert with rich ganache.",
+                    new Dictionary<string, int>
+                    {
+                        {"Chocolate", 3},
+                        {"Flour", 2},
+                        {"Sugar", 2},
+                        {"Eggs", 3},
+                        {"Butter", 2},
+                        {"Cream", 1},
+                        {"Vanilla Extract", 1}
+                    },
+                    4,
+                    22.00m
+                ),
+                
+                new Recipe(
+                    "Avocado and Crab Salad",
+                    "Light and luxurious seafood salad.",
+                    new Dictionary<string, int>
+                    {
+                        {"Crab", 2},
+                        {"Avocado", 2},
+                        {"Lettuce", 1},
+                        {"Lemon", 1},
+                        {"Olive Oil", 1},
+                        {"Salt", 1},
+                        {"Black Pepper", 1}
+                    },
+                    4,
+                    26.00m
+                ),
+                
+                new Recipe(
+                    "Duck Breast with Orange Sauce",
+                    "Succulent duck with tangy citrus sauce.",
+                    new Dictionary<string, int>
+                    {
+                        {"Duck", 2},
+                        {"Orange", 2},
+                        {"Sugar", 1},
+                        {"Butter", 1},
+                        {"Salt", 1},
+                        {"Black Pepper", 1}
+                    },
+                    4,
+                    32.00m
                 ),
 
                 // Expert recipes (Difficulty 5)
