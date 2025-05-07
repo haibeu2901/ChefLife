@@ -52,8 +52,11 @@ namespace ChefLife.Core
             List<Recipe> starterRecipes = Recipes.GetStarterRecipes();
             foreach (var recipe in starterRecipes)
             {
-                
+                player.LearnRecipe(recipe);
             }
+
+            ui.DisplayMessage($"Welcome, Chef {name}! Your culinary adventure begins now!");
+            ui.PressAnyKeyToContinue();
         }
     }
 }
