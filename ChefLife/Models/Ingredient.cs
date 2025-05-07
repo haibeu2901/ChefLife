@@ -11,21 +11,23 @@ namespace ChefLife.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public bool isSpecial { get; set; }
+        public bool IsSpecial { get; set; }
 
-        public Ingredient(string name, string description, decimal price, bool isSpecial)
+        public Ingredient(string name, string description, decimal price, bool isSpecial = false)
         {
             Name = name;
             Description = description;
             Price = price;
-            this.isSpecial = isSpecial;
+            IsSpecial = isSpecial;
         }
 
         public void DisplayIngredient()
         {
             Console.WriteLine($"{Name} - ${Price} per unit");
             Console.WriteLine(Description);
-            if (isSpecial) Console.WriteLine("✨ Special ingredient ✨");
+            if (IsSpecial) Console.WriteLine("✨ Special ingredient ✨");
         }
+
+
     }
 }
