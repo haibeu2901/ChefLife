@@ -25,7 +25,7 @@ namespace ChefLife.Models
 
         public string GetDifficultyStars()
         {
-             return new string('*', Difficulty);
+             return new string('*', Difficulty) + new string('-', 5 - Difficulty);
             //return new string('★', Difficulty) + new string('☆', 5 - Difficulty);
         }
 
