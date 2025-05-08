@@ -41,7 +41,26 @@ namespace ChefLife.Core
             InitializeGameData();
         }
 
+        // Method to start the game
+        public void Start()
+        {
+            // Create player character
+            CreatePlayerCharacter();
 
+            // Main game loop
+            while (gameState.IsRunning)
+            {
+                StartNewDay();
+                RunDay();
+                EndDay();
+
+                // Check if player wants to continue
+                if (!ui.ConfirmAction("Continue to next day?"))
+                {
+                    gameState.IsRunning = false;
+                }
+            }
+        }
 
         private void CreatePlayerCharacter()
         {
