@@ -41,6 +41,8 @@ namespace ChefLife.Core
             InitializeGameData();
         }
 
+
+
         private void CreatePlayerCharacter()
         {
             ui.DisplayTitle("Welcome to Chef's RPG Life!");
@@ -80,7 +82,24 @@ namespace ChefLife.Core
                 int choice = ui.DisplayMenu(options);
                 switch (choice)
                 {
-                    
+                    case 0: // Go to Market
+                        GoToMarket();
+                        break;
+                    case 1: // View Recipes
+                        ViewRecipes();
+                        break;
+                    case 2: // View Inventory
+                        ViewInventory();
+                        break;
+                    case 3: // Cook Something
+                        CookSomething();
+                        break;
+                    case 4: // Serve Customers
+                        ServeCustomers();
+                        break;
+                    case 5: // End Day
+                        dayEnded = true;
+                        break;
                 }
             }
         }
