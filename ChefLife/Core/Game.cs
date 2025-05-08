@@ -137,5 +137,26 @@ namespace ChefLife.Core
                 }
             }
         }
+
+        // View inventory functionality
+        private void ViewInventory()
+        {
+            ui.DisplayTitle("Your Inventory");
+
+            if (player.Inventory.Count == 0)
+            {
+                ui.DisplayMessage("Your inventory is empty!");
+            } else
+            {
+                foreach (var item in player.Inventory)
+                {
+                    ui.DisplayMessage($"{item.Key}: {item.Value}");
+                }
+            }
+
+            ui.PressAnyKeyToContinue();
+        }
+
+
     }
 }
