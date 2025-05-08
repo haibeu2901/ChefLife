@@ -157,6 +157,39 @@ namespace ChefLife.Core
             ui.PressAnyKeyToContinue();
         }
 
+        // Cook something functionality
+        private void CookSomething()
+        {
+            ui.DisplayTitle("Cook a Recipe");
 
+            if (player.KnownRecipes.Count == 0)
+            {
+                ui.DisplayMessage("You don't know any recipes yet!");
+                ui.PressAnyKeyToContinue();
+                return;
+            }
+
+            // Display available recipes
+            List<string> recipeOptions = new List<string>();
+            foreach (Recipe recipe in player.KnownRecipes)      
+            {
+                recipeOptions.Add(recipe.Name);
+            }
+            recipeOptions.Add("Cancel");
+
+            int choice = ui.DisplayMenu(recipeOptions);
+            if (choice == recipeOptions.Count - 1)
+            {
+                return;
+            }
+
+            Recipe selectedRecipes = player.KnownRecipes[choice];
+            selectedRecipes.DisplayRecipe();
+
+            if (ui.ConfirmAction("Would you like to cook this recipe?"))
+            {
+                player.CookRecipe(selectedRecipes);
+            }
+        }
     }
 }

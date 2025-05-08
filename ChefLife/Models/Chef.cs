@@ -9,7 +9,7 @@ namespace ChefLife.Models
     internal class Chef
     {
         public string Name {  get; set; }
-        public int CoolingLevel { get; set; }
+        public int CookingLevel { get; set; }
         public decimal Money { get; set; }
         public int Reputation {  get; set; }
         public Dictionary<string, int> Inventory { get; set; }
@@ -18,7 +18,7 @@ namespace ChefLife.Models
         public Chef(string name)
         {
             Name = name;
-            CoolingLevel = 1;
+            CookingLevel = 1;
             Money = 10000.00m;
             Reputation = 0;
             Inventory = new Dictionary<string, int>();
@@ -58,6 +58,44 @@ namespace ChefLife.Models
             }
 
             Console.WriteLine($"Purchased {quantity} {name} for ${totalCost}");
+            return true;
+        }
+
+        public void GainExperience(int amount)
+        {
+            // Simple leveling system
+            if (amount > 0)
+            {
+                if (amount >= 100)
+                {
+                    CookingLevel++;
+                    Console.WriteLine($"Level up! You are now Cooking Level {CookingLevel}");
+                }
+            }
+        }
+
+        public bool CookRecipe(Recipe recipe)
+        {
+            // Check if we have all ingredients
+            foreach (var ingredient in recipe.Ingredients)
+            {
+                if (!Inventory.ContainsKey(ingredient.Key) || Inventory[ingredient.Key] < ingredient.Value)
+                {
+                    Console.WriteLine($"Not enough {ingredient.Key} to cook {recipe.Name}!");
+                    return false;
+                }
+            }
+
+            // Use ingredients
+            foreach (var ingredient in recipe.Ingredients)
+            {
+                Inventory[ingredient.Key] -= ingredient.Value;
+            }
+
+            // Gain experience
+            GainExperience(recipe.Difficulty * 10);
+
+            Console.WriteLine($"Successfully cooked {recipe.Name}!");
             return true;
         }
     }
