@@ -123,6 +123,22 @@ namespace ChefLife.Core
             }
         }
 
+        // End the day
+        private void EndDay()
+        {
+            ui.DisplayTitle($"End of Day {dayNumber}");
+            ui.DisplayMessage("You close the restaurant and tally up the day's results...");
+
+            // Summary of the day
+            ui.DisplayMessage($"Money: ${player.Money}");
+            ui.DisplayMessage($"Reputation: {player.Reputation}");
+
+            // Increment day number
+            dayNumber++;
+
+            ui.PressAnyKeyToContinue();
+        }
+
         private void GoToMarket()
         {
             bool exitMarket = false;
