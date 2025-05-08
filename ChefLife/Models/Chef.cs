@@ -98,5 +98,17 @@ namespace ChefLife.Models
             Console.WriteLine($"Successfully cooked {recipe.Name}!");
             return true;
         }
+
+        public void GainReputation(int amount)
+        {
+            Reputation += amount;
+            Console.WriteLine($"Gained {amount} reputation points. Current reputation: {Reputation}");
+        }
+
+        public void EarnMoney(decimal amount)
+        {
+            Money += amount;
+            Console.WriteLine($"Earned ${amount}. Current balance: ${Money}");
+        }
     }
 }

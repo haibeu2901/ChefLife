@@ -191,5 +191,81 @@ namespace ChefLife.Core
                 player.CookRecipe(selectedRecipes);
             }
         }
+
+        // Serve customers functionality
+        private void ServeCustomers()
+        {
+            ui.DisplayTitle("Serve Customers");
+
+            if (todayCustomers.Count == 0)
+            {
+                ui.DisplayMessage("There are no customers today!");
+                ui.PressAnyKeyToContinue();
+                return;
+            }
+
+            // Get a random customer from today's list
+            Customer customer = todayCustomers[random.Next(todayCustomers.Count)];
+            todayCustomers.Remove(customer); // Remove this customer from the list
+
+            ui.DisplayMessage($"{customer.Name} has entered your restaurant!");
+
+            // Customer places an order
+            Recipe orderedRecipe = customer.PlaceOrder(player.KnownRecipes);
+
+            if (orderedRecipe == null)
+            {
+                ui.DisplayMessage("The customer couldn't find anything they wanted on the menu.");
+                ui.PressAnyKeyToContinue();
+                return;
+            }
+
+            // Ask player if they want to cook the order
+            if (ui.ConfirmAction($"Will you cook {orderedRecipe.Name} for {customer.Name}?"))
+            {
+                // Try to cook the recipe
+                bool success = player.CookRecipe(orderedRecipe);
+
+                if (success)
+                {
+                    // Determine if it was cooked perfectly (80% chance of success for simplicity)
+                    bool perfectCook = random.Next(1, 101) <= 80;
+
+                    // Get customer's rating and tip
+                    var (rating, tip) = customer.RateDishAndTip(orderedRecipe, perfectCook);
+
+                    ui.DisplayMessage($"{customer.Name} rates your {orderedRecipe.Name} a {rating}/10!");
+
+                    // Handle payment and tip
+                    decimal payment = orderedRecipe.BasePrice + tip;
+                    player.EarnMoney(payment);
+
+                    if (tip > 0)
+                    {
+                        ui.DisplayMessage($"{customer.Name} left a tip of ${tip}!");
+                    }
+
+                    // Reputation gain based on rating
+                    int reputationGain = rating - 5; // Can be negative for bad ratings
+                    if (reputationGain != 0)
+                    {
+                        player.GainReputation(reputationGain);
+                    }
+                }
+                else
+                {
+                    ui.DisplayMessage($"You couldn't cook {orderedRecipe.Name} for {customer.Name}.");
+                    ui.DisplayMessage($"{customer.Name} leaves disappointed.");
+                    player.GainReputation(-1); // Small reputation loss
+                }
+            }
+            else
+            {
+                ui.DisplayMessage($"{customer.Name} leaves disappointed.");
+                player.GainReputation(-1); // Small reputation loss
+            }
+
+            ui.PressAnyKeyToContinue();
+        }
     }
 }

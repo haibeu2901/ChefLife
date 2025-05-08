@@ -33,5 +33,70 @@ namespace ChefLife.Models
 
             return new Customer(name, patience, generosity);
         }
+
+        // Method to place an order
+        public Recipe PlaceOrder(List<Recipe> availableRecipes)
+        {
+            // If the menu is empty, return null
+            if (availableRecipes.Count == 0)
+                return null;
+
+            // First try to order a preferred dish if it's available
+            if (PreferredDishes.Count > 0)
+            {
+                foreach (string dishName in PreferredDishes)
+                {
+                    Recipe preferredRecipe = availableRecipes.Find(r => r.Name == dishName);
+                    if (preferredRecipe != null)
+                    {
+                        // 70% chance to order a preferred dish
+                        if (random.Next(1, 101) <= 70)
+                        {
+                            Console.WriteLine($"{Name} orders their favorite: {preferredRecipe.Name}!");
+                            return preferredRecipe;
+                        }
+                    }
+                }
+            }
+
+            // Otherwise, order a random dish
+            Recipe randomRecipe = availableRecipes[random.Next(availableRecipes.Count)];
+            Console.WriteLine($"{Name} orders: {randomRecipe.Name}");
+            return randomRecipe;
+        }
+
+        // Method to rate the food and determine tip
+        public (int rating, decimal tip) RateDishAndTip(Recipe recipe, bool perfectlyCrafted)
+        {
+            int baseRating = random.Next(3, 6); // Base rating between 3-5
+
+            // Adjust rating based on if the dish was crafted perfectly
+            if (perfectlyCrafted)
+            {
+                baseRating += 2;
+            }
+            else
+            {
+                baseRating -= 1;
+            }
+
+            // Preferred dish bonus
+            if (PreferredDishes.Contains(recipe.Name))
+            {
+                baseRating += 1;
+            }
+
+            // Clamp final rating between 1-10
+            int finalRating = Math.Clamp(baseRating, 1, 10);
+
+            // Calculate tip based on the rating and customer's generosity
+            decimal tipPercentage = (finalRating / 10.0m) * (Generosity / 10.0m);
+            decimal tipAmount = recipe.BasePrice * tipPercentage;
+
+            // Round tip to nearest 0.25
+            tipAmount = Math.Round(tipAmount * 4) / 4;
+
+            return (finalRating, tipAmount);
+        }
     }
 }
