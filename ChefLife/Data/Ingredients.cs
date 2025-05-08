@@ -31,7 +31,7 @@ namespace ChefLife.Data
                 //new Ingredient("Gelatin", "Used in jellies and desserts", 2.80m),
 
                 // Vegetables
-                //new Ingredient("Tomato", "Red, juicy fruit used as vegetable", 1.25m),
+                new Ingredient("Tomato", "Red, juicy fruit used as vegetable", 1.25m),
                 new Ingredient("Onion", "Aromatic vegetable for flavor base", 0.75m),
                 new Ingredient("Garlic", "Strong aromatic ingredient", 1.00m),
                 //new Ingredient("Lettuce", "Leafy green for salads", 1.50m),
@@ -50,8 +50,8 @@ namespace ChefLife.Data
                 // Fruits
                 new Ingredient("Apple", "Sweet, crisp fruit", 1.25m),
                 new Ingredient("Lemon", "Sour citrus fruit", 0.90m),
-                //new Ingredient("Berries", "Assorted small fruits", 3.50m),
-                new Ingredient("Banana", "Soft, sweet fruit", 1.00m),
+                new Ingredient("Berries", "Assorted small fruits", 3.50m),
+                //new Ingredient("Banana", "Soft, sweet fruit", 1.00m),
                 //new Ingredient("Orange", "Citrus fruit rich in vitamin C", 1.10m),
                 //new Ingredient("Grapes", "Small sweet or sour fruit", 2.25m),
                 //new Ingredient("Peach", "Juicy stone fruit", 1.50m),
@@ -122,7 +122,7 @@ namespace ChefLife.Data
                 //new Ingredient("Cinnamon", "Sweet spice", 2.00m),
                 new Ingredient("Parsley", "Fresh green garnish", 1.10m),
                 //new Ingredient("Thyme", "Earthy green herb", 1.20m),
-                //new Ingredient("Rosemary", "Fragrant needle-like herb", 1.35m),
+                new Ingredient("Rosemary", "Fragrant needle-like herb", 1.35m),
                 //new Ingredient("Paprika", "Red spice from peppers", 1.50m),
                 //new Ingredient("Cumin", "Warm, earthy spice", 1.60m),
                 //new Ingredient("Turmeric", "Bright yellow spice", 1.70m),
