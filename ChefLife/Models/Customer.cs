@@ -98,5 +98,14 @@ namespace ChefLife.Models
 
             return (finalRating, tipAmount);
         }
+
+        // Method to add a preferred dish
+        public void AddPreferredDish(string dishName)
+        {
+            if (!PreferredDishes.Contains(dishName))
+            {
+                PreferredDishes.Add(dishName);
+            }
+        }
     }
 }

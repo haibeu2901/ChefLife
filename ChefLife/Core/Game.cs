@@ -336,5 +336,36 @@ namespace ChefLife.Core
 
             ui.PressAnyKeyToContinue();
         }
+
+        // Generate customers for the day
+        private void GenerateDailyCustomers()
+        {
+            // Clear yesterday's customers
+            todayCustomers.Clear();
+
+            // Number of customers depends on reputation
+            int customerCount = 3 + (player.Reputation / 10);
+            customerCount = Math.Clamp(customerCount, 1, 10);
+
+            for (int i = 0; i < customerCount; i++)
+            {
+                Customer customer = Customer.CreateRandomCustomer();
+
+                // Randomly assign preferred dishes
+                int preferredDishCount = random.Next(0, 3); // 0-2 preferred dishes
+                for (int j = 0; j < preferredDishCount; j++)
+                {
+                    if (availableRecipes.Count > 0)
+                    {
+                        Recipe randomRecipe = availableRecipes[random.Next(availableRecipes.Count)];
+                        customer.AddPreferredDish(randomRecipe.Name);
+                    }
+                }
+
+                todayCustomers.Add(customer);
+            }
+
+            ui.DisplayMessage($"You have {todayCustomers.Count} potential customers today!");
+        }
     }
 }
