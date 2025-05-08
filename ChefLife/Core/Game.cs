@@ -80,6 +80,21 @@ namespace ChefLife.Core
             ui.PressAnyKeyToContinue();
         }
 
+        // Start a new day
+        private void StartNewDay()
+        {
+            ui.DisplayTitle($"Day {dayNumber}");
+            ui.DisplayMessage($"Good morning, Chef {player.Name}!");
+            ui.DisplayMessage($"Current Money: ${player.Money}");
+            ui.DisplayMessage($"Reputation: {player.Reputation}");
+            ui.DisplayMessage($"Cooking Level: {player.CookingLevel}");
+
+            // Generate today's customers
+            GenerateDailyCustomers();
+
+            ui.PressAnyKeyToContinue();
+        }
+
         // Run the day's activities
         private void RunDay()
         {
